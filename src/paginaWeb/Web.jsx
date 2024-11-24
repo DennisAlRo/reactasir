@@ -8,7 +8,6 @@ function Web() {
     <>
     <Header/>
     <Contenido/>
-    <Footer RRSS={[{nombre:"Facebook",url:"hola"},{nombre:"Instagram",url:"adios"},{nombre:"Linkedin",url:"otra"},{nombre:"Google",url:"google"}]}/>
     </>
   )
 }

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-
 import Tarjeta from "./Cards";
 import Nav from "./Nav";
 
+
 export default function Rutas() {
   return (
     <Router>
@@ -9,8 +10,11 @@ export default function Rutas() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
 	      <Route path="/nombre" element={<MySkills/>} />
-        <Route path="/producto/:numero" element={<Producto/>} />
+        <Route path="/nombre1" element={<MySkills2/>} />
+        <Route path="/nombre2" element={<MySkills3/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/nombre2" element={<MySkills4/>} />
+
       </Routes>
     </Router>
   );
@@ -30,6 +34,13 @@ function About() {
   return <div>about</div>;
 }
 function MySkills() {
+    return <Tarjeta/>
+  }
+  function MySkills2() {
+    return <Tarjeta/>
+  }
+
+  function MySkills3() {
     return <Tarjeta/>
   }
 

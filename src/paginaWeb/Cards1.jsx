@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Tarjeta() {
+function Tarjeta1() {
   const [pokemon, setPokemon] = useState(null);
 
+ 
   const fetchRandomPokemon = async () => {
     try {
-      const randomId = Math.floor(Math.random() * 151) + 1; 
+      const randomId = Math.floor(Math.random() * 100) + 152; 
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
       const data = await response.json();
       setPokemon({
@@ -32,13 +33,12 @@ function Tarjeta() {
   }
 
   return (
-    <Card style={{ width: '10rem', fontSize: '0.5rem', padding: '0.5rem', backgroundColor:'red', border:'solid orange 5px'}}>
+    <Card style={{ width: '10rem', fontSize: '0.5rem', padding: '0.5rem', backgroundColor:'green', border:'solid darkgreen 5px'}}>
       <Card.Img
         variant="top"
         src={pokemon.image}
         alt={pokemon.name}
-        style={{ height: '8rem', objectFit: 'contain', border:'solid orange 5px'}}
-        
+        style={{ height: '8rem', objectFit: 'contain', border:'solid darkgreen 5px'}}
       />
       <Card.Body>
         <Card.Title style={{ fontSize: '1rem' }}>{pokemon.name.toUpperCase()}</Card.Title>
@@ -65,4 +65,4 @@ function Tarjeta() {
   );
 }
 
-export default Tarjeta;
+export default Tarjeta1;
