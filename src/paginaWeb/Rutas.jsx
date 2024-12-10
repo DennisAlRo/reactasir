@@ -14,6 +14,8 @@ export default function Rutas() {
         <Route path="/nombre2" element={<MySkills3/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/nombre2" element={<MySkills4/>} />
+        <Route path="/defensa" element={<Defensa/>} />
+
 
       </Routes>
     </Router>
@@ -44,6 +46,9 @@ function MySkills() {
     return <Tarjeta/>
   }
 
+  function Defensa() {
+    return <Tarjeta/>
+  }
 function Producto() {
     //Lectura del parámetro de la URL
     const params = useParams();

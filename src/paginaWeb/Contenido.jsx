@@ -9,6 +9,7 @@ import Tarjeta from './Cards';
 import Tarjeta1 from './Cards1';
 import Tarjeta2 from './Cards2';
 import Tarjeta4 from './Cards3';
+import Card4 from './Card4';
 
 function Contenido() {
   return (
@@ -37,6 +38,8 @@ function Contenido() {
         <Route path="/about/domingo" element={<Domingo/>} />
         <Route path="/about/morgado" element={<Morgado/>} />
         <Route path="/noticias3" element={<MySkills4/>}> 
+        </Route>
+        <Route path="/defensa" element={<Defensa/>}> 
         </Route>
         <Route path="*" element={<NotFound/>} />
         </Routes>
@@ -172,5 +175,11 @@ function MySkills4() {
       </article>
       </section>
 
+  </div>
+}
+
+function Defensa() {
+  return <div>
+    <Card4/>
   </div>
 }

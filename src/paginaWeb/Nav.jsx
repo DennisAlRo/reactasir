@@ -14,6 +14,8 @@ function Nav() {
         <Link to="/about/domingo"><IoIosContact />Domingo</Link> - 
         <Link to="/about/morgado"><IoIosContact />Morgado</Link> - 
         <Link to="/noticias3"> DIGIMON</Link> - 
+        <Link to="/defensa"> Defensa</Link> - 
+
 
 
     </nav>

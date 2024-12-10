@@ -1,0 +1,18 @@
+[
+    {
+        "imagen":"https://www.servigroup.com/assets/cache/uploads/gallery/proposals/excursiones/que-ver-almeria/1280x720/alcazaba-almeria-1701094733.jpg",
+        "titulo":"Almeria",
+        "texto":"Esta es almeria"
+    },
+    {
+        "imagen":"https://phantom-elmundo.unidadeditorial.es/88ccce408efac6645b01f53f0438672c/resize/414/f/jpg/assets/multimedia/imagenes/2021/06/30/16250507071619.jpg",
+        "titulo":"Granada",
+        "texto":"Esta es granada"
+    },
+    {
+        "imagen":"https://media.traveler.es/photos/61376210c4f3d95786667be3/master/pass/198677.jpg",
+        "titulo":"Cordoba",
+        "texto":"Esta es cordoba"
+    }
+
+]
