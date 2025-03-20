@@ -14,4 +14,4 @@ spec:
     protocol: TCP
     port: 80  # Puerto expuesto en el servicio
     targetPort: 80  # Puerto expuesto en el contenedor
-    nodePort: 30480  # Para acceder desde el exterior (en el rango 30000-32767)
+    nodePort: 30500  # Para acceder desde el exterior (en el rango 30000-32767)
