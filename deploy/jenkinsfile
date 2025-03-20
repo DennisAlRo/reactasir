@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        K8S_SERVER = "https://192.168.49.2:8443" // IP de tu VPS
+        K8S_SERVER = "https://52.202.65.3:8080" // IP de tu VPS
         K8S_TOKEN = credentials('k8s-token')
         NAMESPACE="default"
         // REGISTRY = "frmehu"  // Cambia     por tu usuario de Docker Hub o tu registro privado
