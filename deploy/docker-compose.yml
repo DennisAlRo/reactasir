@@ -3,14 +3,14 @@ services:
   servidor:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/js/react/Dockerfile
+      dockerfile: ./dockerfiles/js/react/jls-Dockerfile
       args: 
         - CONTEXT=${CONTEXTO}
         - TZ=${TZ}
         - PROYECTO=${PROYECTO}
         - AUTOR=${AUTOR}
         - GITHUB=${GITHUB}
-    image: ${AUTOR}/api
+    image: ${AUTOR}/pokeapi
     container_name: ${PROYECTO}
     hostname: ${HOSTNAME}
     env_file:

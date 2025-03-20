@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        K8S_SERVER = "https://192.168.49.2:8443" // IP de tu VPS
+        K8S_SERVER = "https://192.168.58.2:8443" // IP de tu VPS
         K8S_TOKEN = credentials('k8s-token')
         NAMESPACE="default" // Nombre del namespace en el que se desplegará la aplicación
-        DOCKER_IMAGE = "dennisalro/api"
+        DOCKER_IMAGE = "txus027/pokeapi"
         DOCKER_TAG = "latest"
         DOCKER_CREDENTIALS_ID = "docker-hub"
-        REPO="https://github.com/DennisAlRo/reactasir.git"
+        REPO="https://github.com/Txus27/Pokeapi.git"
     }
 
 
@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Clonar repositorio git Pokeapi desde Github') {
             steps {
-                git branch: 'main', url: 'https://github.com/DennisAlRo/reactasir.git'
+                git branch: 'main', url: 'https://github.com/Txus27/Pokeapi.git'
             }
         }  
         /*

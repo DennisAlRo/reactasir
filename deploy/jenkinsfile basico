@@ -5,16 +5,16 @@ pipeline {
         K8S_SERVER = "https://192.168.49.2:8443" // IP de tu VPS
         K8S_TOKEN = credentials('k8s-token')
         NAMESPACE="default"
-        DOCKER_IMAGE = "fabiofabrega/api"
+        DOCKER_IMAGE = "txus027/pokeapi"
         DOCKER_TAG = "latest"
         DOCKER_CREDENTIALS_ID = "docker-hub"
-        REPO="https://github.com/FabioFabrega/Api.git"
+        REPO="https://github.com/Txus27/Pokeapi.git"
     }
 
     stages {
-        stage('Clonar repositorio git api desde Github') {
+        stage('Clonar repositorio git Pokeapi desde Github') {
             steps {
-                git branch: 'main', url: 'https://github.com/FabioFabrega/Api.git'
+                git branch: 'main', url: 'https://github.com/Txus27/Pokeapi.git'
             }
         } 
 
