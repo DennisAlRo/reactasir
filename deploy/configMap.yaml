@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-env-config
+data:
+  CONTEXTO: /home/ubuntu/HLC-24-25/Caronte
+  AUTOR: frmehu
+  TZ: Europe/Madrid
+  PROYECTO: reactapihlc
+  GITHUB: https://github.com/FrMeHu/reactapihlc.git
+  USUARIO: frmehu
+  PASSWD: frmehu
+  HOSTNAME: autocaravaneando
+  PORT_SSH: "45678"
+  PORT_ORIGEN: "8082" 
