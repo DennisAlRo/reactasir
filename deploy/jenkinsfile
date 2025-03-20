@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        K8S_SERVER = "https://192.168.58.2:8443" // IP de tu VPS
+        K8S_SERVER = "https://192.168.49.2:8443" // IP de tu VPS
         K8S_TOKEN = credentials('k8s-token')
         NAMESPACE="default" // Nombre del namespace en el que se desplegará la aplicación
         DOCKER_IMAGE = "txus027/pokeapi"
