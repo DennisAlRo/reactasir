@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: app-env-config
 data:
-  CONTEXTO: /home/ubuntu/HLC-24-25/Caronte
-  AUTOR: frmehu
+  CONTEXTO: /home/ubuntu/Caronte
+  AUTOR: dennisalro
   TZ: Europe/Madrid
-  PROYECTO: reactapihlc
+  PROYECTO: reactasir
   GITHUB: https://github.com/DennisAlRo/reactasir.git
   USUARIO: dennisalro 
   PASSWD: Eradedalt1
