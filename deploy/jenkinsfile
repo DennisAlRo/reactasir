@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clonar repositorio git Autocaravaneando desde Github ok') {
             steps {
-                git branch: 'master', url: 'https://github.com/DennisAlRo/reactasir.git'
+                git branch: 'main', url: 'https://github.com/DennisAlRo/reactasir.git'
             }
         }
         // stage('Docker Build & Push') { 
