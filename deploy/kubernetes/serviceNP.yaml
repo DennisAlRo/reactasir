@@ -1,16 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: apireact-s
+  name: pokeapi-kube-s # Nombre del servicio
+  namespace: default
   labels:
-    app: apireact
+    app: pokeapi-kube
 spec:
   selector:
-    app: apireact
-  type: LoadBalancer
+    app: pokeapi-kube
+  type: NodePort  # Tipo de servicio
   ports:
   - name: http-port
     protocol: TCP
-    port: 82  # Puerto expuesto en el servicio
+    port: 80  # Puerto expuesto en el servicio
     targetPort: 80  # Puerto expuesto en el contenedor
     nodePort: 30480  # Para acceder desde el exterior (en el rango 30000-32767)
