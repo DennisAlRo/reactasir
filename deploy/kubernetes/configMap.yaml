@@ -3,13 +3,13 @@ kind: ConfigMap
 metadata:
   name: app-env-config
 data:
-  CONTEXTO: /home/juanlu/ubuntu/caronte
-  AUTOR: txus027
+  CONTEXTO: /home/ubuntu/Caronte
+  AUTOR: dennisalro
   TZ: Europe/Madrid
   PROYECTO: Pokeapi
-  GITHUB: https://github.com/Txus27/Pokeapi.git
-  USUARIO: juanluis
-  PASSWD: usuario
+  GITHUB: https://github.com/DennisAlRo/reactasir.git
+  USUARIO: dennialro
+  PASSWD: Eradedalt1
   HOSTNAME: react
   PORT_SSH: "45678"
   PORT_ORIGEN: "8083"
