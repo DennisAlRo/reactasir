@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: apireact
-          image: frmehu/react:v1
+          image: dennisalro/react:v1
           envFrom:
             - configMapRef:
                 name: app-env-config

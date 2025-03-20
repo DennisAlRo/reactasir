@@ -7,9 +7,9 @@ data:
   AUTOR: frmehu
   TZ: Europe/Madrid
   PROYECTO: reactapihlc
-  GITHUB: https://github.com/FrMeHu/reactapihlc.git
-  USUARIO: frmehu
-  PASSWD: frmehu
+  GITHUB: https://github.com/DennisAlRo/reactasir.git
+  USUARIO: dennisalro 
+  PASSWD: Eradedalt1
   HOSTNAME: autocaravaneando
   PORT_SSH: "45678"
   PORT_ORIGEN: "8082" 
